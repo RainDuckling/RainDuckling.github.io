@@ -1,3 +1,4 @@
+disableKinds = ["RSS"]
 baseURL = "https://RainDuckling.github.io/"
 languageCode = "zh-cn"
 title = "RainDuckling's Blog"
@@ -7,6 +8,7 @@ theme = "PaperMod"
     name = "RainDuckling"
 
 [params]
+    author = "RainDuckling"
     env = "production"
     # 首页呈现模式：Profile Mode (个人简介)
     [params.profileMode]
