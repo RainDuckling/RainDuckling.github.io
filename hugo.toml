@@ -1,4 +1,3 @@
-disableKinds = ["RSS"]
 baseURL = "https://RainDuckling.github.io/"
 languageCode = "zh-cn"
 title = "RainDuckling's Blog"
@@ -7,42 +6,36 @@ theme = "PaperMod"
 [author]
     name = "RainDuckling"
 
+[services]
+    [services.googleAnalytics]
+        ID = ""
+
 [params]
     author = "RainDuckling"
     env = "production"
-    # 首页呈现模式：Profile Mode (个人简介)
+    
     [params.profileMode]
         enabled = true
         title = "你好，我是 RainDuckling 👋"
         subtitle = "一名正在构建个人世界的开发者"
-        imageUrl = "https://github.com/RainDuckling.png" # 自动调用你的 GitHub 头像
-        imageWidth = 120
-        imageHeight = 120
+        imageUrl = "https://github.com/RainDuckling.png"
         [[params.profileMode.buttons]]
             name = "阅读文章"
             url = "posts"
-
         [[params.profileMode.buttons]]
-            name = "Github"
-            url = "https://github.com/RainDuckling"
-        
+            name = "Itch.io"
+            url = "https://rainduckling.itch.io"
         [[params.profileMode.buttons]]
-            name = "X (Twitter)"
-            url = "https://x.com/你的用户名"
+            name = "X"
+            url = "https://x.com/RainDuckling"
 
-        [[params.profileMode.buttons]]
-            name = "Itch.io 商店"
-            url = "https://你的用户名.itch.io"
-
-    # 社交链接
+    # 社交图标配置
     [[params.socialIcons]]
         name = "github"
         url = "https://github.com/RainDuckling"
-    
-    [[params.socialIcons]]
-        name = "x"
-        url = "https://x.com/RainDuckling"
-
     [[params.socialIcons]]
         name = "itchnet"
         url = "https://rainduckling.itch.io"
+    [[params.socialIcons]]
+        name = "x"
+        url = "https://x.com/RainDuckling"
