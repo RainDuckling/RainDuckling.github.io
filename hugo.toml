@@ -1,4 +1,4 @@
-baseURL = "https://RainDuckling.github.io/"
+baseURL = "https://rainduckling.github.io/"
 languageCode = "zh-cn"
 title = "RainDuckling's Blog"
 theme = "PaperMod"
