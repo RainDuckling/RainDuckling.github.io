@@ -3,6 +3,9 @@ languageCode = "zh-cn"
 title = "RainDuckling's Blog"
 theme = "PaperMod"
 
+[author]
+    name = "RainDuckling"
+
 [params]
     env = "production"
     # 首页呈现模式：Profile Mode (个人简介)
