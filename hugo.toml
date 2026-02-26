@@ -3,12 +3,18 @@ languageCode = "zh-cn"
 title = "RainDuckling's Blog"
 theme = "PaperMod"
 
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
 [author]
     name = "RainDuckling"
 
-[services]
-    [services.googleAnalytics]
-        ID = ""
+# 2. 添加导航栏菜单
+[[menu.main]]
+    identifier = "search"
+    name = "🔍 搜索"
+    url = "search"
+    weight = 10
 
 [params]
     author = "RainDuckling"
@@ -19,17 +25,13 @@ theme = "PaperMod"
         title = "你好，我是 RainDuckling 👋"
         subtitle = "一名正在构建个人世界的开发者"
         imageUrl = "https://github.com/RainDuckling.png"
+        
+        # 只保留“阅读文章”按钮，删除了 Itch 和 X 的大按钮
         [[params.profileMode.buttons]]
             name = "阅读文章"
             url = "posts"
-        [[params.profileMode.buttons]]
-            name = "Itch.io"
-            url = "https://rainduckling.itch.io"
-        [[params.profileMode.buttons]]
-            name = "X"
-            url = "https://x.com/RainDuckling"
 
-    # 社交图标配置
+    # 3. 社交图标保留（这些会以小图标形式显示在简介下方）
     [[params.socialIcons]]
         name = "github"
         url = "https://github.com/RainDuckling"
@@ -39,3 +41,11 @@ theme = "PaperMod"
     [[params.socialIcons]]
         name = "x"
         url = "https://x.com/RainDuckling"
+    
+    [params.fuseConfig]
+        shouldSort = true
+        location = 0
+        distance = 100
+        threshold = 0.4
+        minMatchCharLength = 0
+        keys = ["title", "permalink", "summary", "content"]
