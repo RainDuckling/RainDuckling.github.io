@@ -1,5 +1,4 @@
 +++
-date = '2026-02-26T11:35:19+08:00'
-draft = true
-title = 'Search'
+title: "搜索"
+layout: "search"
 +++
